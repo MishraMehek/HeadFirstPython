@@ -1,0 +1,17 @@
+from datetime import datetime
+import random
+import time
+
+odds = random.randint(0, 59)
+Count = 0
+while True:
+    Right_This_Second = datetime.today().second
+    print(Right_This_Second, ";", odds,"GOING TO SLEEP")
+    time.sleep(1)
+    print("Good morning",datetime.today().second)
+    if Right_This_Second == odds:
+        print("Abhi to Pardy ho rahin hain", Count, "tries")
+        break
+    else:
+        print("No party :(")
+        Count = Count + 1
