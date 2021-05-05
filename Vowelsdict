@@ -8,9 +8,7 @@ Word=list(Word.lower())
 i=0
 ks=vowel.keys() 
 for i in range(len(Word)):
-    print(Word[i])
     if Word[i] in ks:
-            print("in", Word[i])
             vowel[Word[i]]=vowel[Word[i]]+1    
     i=i+1
 print("A=",vowel['a'],"E=",vowel['e'],"I=",vowel['i'],"O=",vowel['o'],"U=",vowel['u'])
