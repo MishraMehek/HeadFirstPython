@@ -9,7 +9,7 @@ i=0
 ks=vowel.keys() 
 for i in range(len(Word)):
     if Word[i] in ks:
-            vowel[Word[i]]=vowel[Word[i]]+1    
+            vowel[Word[i]]+=1    
     i=i+1
 print("A=",vowel['a'],"E=",vowel['e'],"I=",vowel['i'],"O=",vowel['o'],"U=",vowel['u'])
 
