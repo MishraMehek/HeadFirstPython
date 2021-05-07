@@ -1,0 +1,11 @@
+vowel={}
+vowelist=['a','e','i','o','u']
+Word=str(input("Enter a word: "))
+Word=list(Word.lower())
+i=0
+for i in range(len(Word)):
+    if Word[i] in vowelist:
+        vowel.setdefault(Word[i],0)
+        vowel[Word[i]] +=1
+for k,v in sorted(vowel.items()):
+    print(k,'was found',vowel[k],'times')
