@@ -1,0 +1,3 @@
+vowel=set('aeiou')
+Word=str(input("Enter a word: "))
+print(vowel.intersection(set(Word)))
